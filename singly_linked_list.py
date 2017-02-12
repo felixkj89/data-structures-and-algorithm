@@ -18,11 +18,9 @@ def display(head):
 		head = head.next
 
 def insert_begin(new_cell, head):
-	#insert at the beginning
 	new_cell.next = head
 
 def insert_middle(new_cell, to_cell, head):		
-	#insert in the middle
 	before_cell = head
 	while (head):
 		before_cell = head
@@ -31,10 +29,8 @@ def insert_middle(new_cell, to_cell, head):
 			break
 	new_cell.next = to_cell
 	before_cell.next = new_cell
-	print(before_cell)
 
 def insert_end(new_cell, head):
-	#insert at the end
 	while (head):
 		if head.next == None:
 			head.next = new_cell
