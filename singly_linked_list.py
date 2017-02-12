@@ -42,8 +42,12 @@ if __name__ == "__main__":
 	c1 = Cell(1)
 	c2 = Cell(2)
 	c3 = Cell(3)
+	c4 = Cell(4)
+	c5 = Cell(5)
 	
-	c1.next = c2
-	c2.next = c3
+	c1.next = c3
+	c3.next = c2
+	c2.next = c5
+	c5.next = c4
 	
 	
